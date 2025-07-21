@@ -87,9 +87,9 @@ df['Cost'] = df['Cost'].replace('[\$,]', '', regex=True).astype(float)
 df['Mileage'] = df['Mileage'].replace('[,]', '', regex=True).astype(int)
 
 # Verify data types
-print(df.dtypes) <pre>
+print(df.dtypes) </pre>
 
-### Results
+ ## Results 
 
 Summary of Key Insights from the Car Inventory Analysis Price Trends:
 
@@ -99,7 +99,7 @@ Summary of Key Insights from the Car Inventory Analysis Price Trends:
 4. Car Color Preferences: Colors like Silver, Black, and White dominate the inventory. This can be useful in restocking and marketing based on color popularity.
 5. Profitability: The average profit margin differs by brand. Brands like Ford and Chevrolet seem to have higher average profits compared to others.
 
-### Recommendation
+## Recommendation
 
 We recommend the following: 
 
