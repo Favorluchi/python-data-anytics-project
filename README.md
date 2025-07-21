@@ -73,48 +73,9 @@ df = pd.read_excel('Car Inventory.xlsx')  # Ensure the Excel file is in the same
 # Display first few rows
 df.head()  </pre>
 
-## Results 
+## Clean Dataset
 
-
-Nwamaka Okoroafor
-8:50 PM
-Clean Dataset
-
-<pre>
-# Check for missing values
-print(df.isnull().sum())
-
-# Remove duplicates if any
-df = df.drop_duplicates()
-
-# Remove unwanted characters from numeric columns and convert to numbers
-df['Price'] = df['Price'].replace('[\$,]', '', regex=True).astype(float)
-df['Cost'] = df['Cost'].replace('[\$,]', '', regex=True).astype(float)
-df['Mileage'] = df['Mileage'].replace('[,]', '', regex=True).astype(int)
-
-# Verify data types
-print(df.dtypes) </pre>
-Nwamaka Okoroafor
-8:52 PM
-### Results
-
-Summary of Key Insights from the Car Inventory Analysis Price Trends:
-
-1. Car prices range: The car prices range widely, but most fall between $2,000 – $4,000. The average car price is around $3,000, indicating a focus on affordable used cars.
-2. Mileage vs. Price: Cars with lower mileage generally cost more, which is expected, there are a few high-mileage vehicles priced higher—possibly due to brand value or condition.
-3. Popular Brands: The most common brands in the inventory are Toyota, Ford, and Chevrolet. This may suggest either high customer demand or dealer preference for these brands.
-4. Car Color Preferences: Colors like Silver, Black, and White dominate the inventory. This can be useful in restocking and marketing based on color popularity.
-5. Profitability: The average profit margin differs by brand. Brands like Ford and Chevrolet seem to have higher average profits compared to others.
-
-## Recommendations
-
-
-Nwamaka Okoroafor
-8:50 PM
-Clean Dataset
-
-<pre>
-# Check for missing values
+<pre> # Check for missing values
 print(df.isnull().sum())
 
 # Remove duplicates if any
@@ -137,8 +98,7 @@ Summary of Key Insights from the Car Inventory Analysis Price Trends:
 3. Popular Brands: The most common brands in the inventory are Toyota, Ford, and Chevrolet. This may suggest either high customer demand or dealer preference for these brands.
 4. Car Color Preferences: Colors like Silver, Black, and White dominate the inventory. This can be useful in restocking and marketing based on color popularity.
 5. Profitability: The average profit margin differs by brand. Brands like Ford and Chevrolet seem to have higher average profits compared to others.
-Nwamaka Okoroafor
-8:53 PM
+
 ### Recommendation
 
 We recommend the following: 
@@ -163,6 +123,10 @@ We recommend the following:
 
 7. Market Research Extension:
    - Regularly monitor customer preferences and competitor pricing to keep the inventory aligned with market demand.
+
+ ### Limitations
+
+A limitation in data analysis reporting refers to any factor that restricts, weakens, or challenges the accuracy, scope, or generalizability of the analysis results. While the analysis provided key insights into car pricing and brand performance, limitations such as missing mileage data and lack of customer purchase history may have affected the completeness of the conclusions. Future analysis should aim to include these data points for a more comprehensive overview.”
   
      ### References
 
